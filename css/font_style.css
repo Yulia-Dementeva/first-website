@@ -1,0 +1,59 @@
+h1 {
+    color: white;
+    font-family: 'Didact Gothic', sans-serif;
+    text-shadow: 3px 3px 3px #aea4e3;
+}
+
+h2 {
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray;
+}
+
+h3 {
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px gray;
+}
+
+b.b1 {
+    font-size: 35px;
+}
+
+div.nav {
+    font-family: 'Didact Gothic', monospace;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-align: justify-all;  
+    word-spacing: 90px;
+}
+
+li a {
+    word-spacing: normal;
+}
+
+div.cont {
+    font-family: 'Century Gothic', monospace;
+    color: white;
+}
+
+.fa-long-arrow-alt-left {
+    color: #aea4e3;
+    text-shadow: 2px 2px 2px black;
+}
+
+.fa-home {
+    color: #aea4e3;
+    text-shadow: 2px 2px 2px black;
+}
+
+.fa-long-arrow-alt-right {
+    color: #aea4e3;
+    text-shadow: 2px 2px 2px black;
+}
+
+.fa-skull-crossbones {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}

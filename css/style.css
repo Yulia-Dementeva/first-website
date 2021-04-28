@@ -1,0 +1,204 @@
+/*********** расположение ***************/
+
+* {
+    margin: 0;
+}
+
+
+div.nav {
+    width: 80%;
+    height: 80px;
+    left: 10%;
+    position: absolute;
+    text-align: center;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+div.cont {
+/*    display: block;*/
+    width: 80%;
+    left: 0%;
+    position: absolute;
+    z-index: -99;
+    margin-top: 80px;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+div.cont ul {
+    padding-left: 25px;
+}
+
+li i {
+    visibility: hidden;
+}
+
+li:hover i {
+    visibility: visible;
+}
+
+
+
+/*********** рамки для текста **********/
+
+em {
+    display: block;
+    position: relative;
+    border: 1px solid;
+    color: white;
+    background-color: black;
+    text-align: justify;
+    padding: 10px;
+    align-content: center;
+}
+
+
+/*************** цвета ссылок **********************/
+
+A {
+    color: white;
+    text-decoration: none;
+}
+
+A:visited {
+    color: white;
+}
+
+A:active {
+    color: white;
+}
+
+
+/*********** трансформации картинок в таблице в галерее ****************/
+
+td img {
+    transition: 1s all;
+}
+
+td img:hover {
+    border: 3px solid orange;
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+
+
+
+
+/**********выпадающий список ***********/
+
+ul.spisok1 {
+    margin: 0;
+    padding: 15px;
+}
+
+ul.spisok1 li {
+    display: inline;
+}
+
+ul.spisok2 li {
+    display: list-item;
+}
+
+ul.spisok2 {
+    /*    visibility: hidden;*/
+    display: none;
+    background-color: darkorange;
+    border: 2px solid white;
+    width: 35%;
+    position: relative;
+    left: 61%;
+    text-align: left;
+    padding: 2px;
+}
+
+span.dop:hover ul.spisok2 {
+    display: block;
+    visibility: visible;
+}
+
+ul.spisok2 li:hover a {
+    text-decoration: underline;
+    background-color: black;
+    transition: 2s;
+}
+
+ul.spisok1 li a {
+    transition: 2s;
+}
+
+ul.spisok2 li a {
+    transition: 0s;
+}
+
+ul.spisok1 li:hover a {
+    border: 1px solid darkorange;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+
+/*************** анимация h3*****************/
+
+h3 span {
+    animation-name: h3_animation;
+    animation-duration: 3s;
+    color: white;
+}
+
+@keyframes h3_animation {
+    from {
+        margin-left: 65%;
+    }
+
+    50% {
+        font-size: 1.5em;
+    }
+
+    to {
+        margin-left: 0%;
+        color: darkorange;
+    }
+}
+
+/*************** анимация Картинки 1*****************/
+p span {
+    animation-name: p_animation;
+    animation-duration: 3s;
+}
+
+@keyframes p_animation {
+    from {
+        margin-left: 65%;
+    }
+
+    50% {
+        font-size: 1.5em;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+
+/*************** выравнивание таблицы*****************/
+table {
+    margin: auto;
+}
+
+/*************** медиа файл*****************/
+
+@media print {
+    img {
+        filter: grayscale(100%) opacity(50%);
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: black;
+    }
+}

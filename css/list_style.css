@@ -1,0 +1,40 @@
+/****** значки-переходы ******/
+a:hover i {
+    color: white;
+    text-shadow: 3px 3px 3px #aea4e3;
+}
+
+/********** черты после заголовков ****************/
+.line {
+    display: block;
+    margin: 10px auto;
+    width: 70px;
+    height: 1px;
+    background-color: white;
+    position: relative;
+}
+
+.line::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    background-color: white;
+    height: 1px;
+    margin: 0 auto;
+    top: -5px;
+    left: 0;
+    right: 0;
+}
+
+.line::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    background-color: white;
+    height: 1px;
+    margin: 0 auto;
+    top: 5px;
+    left: 0;
+    right: 0;
+}
+
